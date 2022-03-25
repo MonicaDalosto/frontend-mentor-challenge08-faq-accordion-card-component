@@ -58,7 +58,7 @@ body {
 
 /* === IMAGES === */
 .img-container {
-  background: url(/images/bg-pattern-mobile.svg) no-repeat top;
+  background: url(../images/bg-pattern-mobile.svg) no-repeat top;
   width: 23.7rem;
   height: 12rem;
   position: relative;
@@ -78,7 +78,7 @@ body {
 }
 
 .questions::after {
-  background-image: url(/images/icon-arrow-down.svg);
+  background-image: url(../images/icon-arrow-down.svg);
   background-repeat: no-repeat;
   background-position: center bottom;
   width: 1rem;
@@ -170,7 +170,7 @@ footer {
     min-height: 40rem;
     margin-top: 0;
     padding: 0;
-    background: url(/images/bg-pattern-desktop.svg) no-repeat center;
+    background: url(../images/bg-pattern-desktop.svg) no-repeat center;
     background-size: 78rem;
     overflow: hidden;
     background-position: -49rem -23rem;
