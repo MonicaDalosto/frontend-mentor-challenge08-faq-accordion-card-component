@@ -13,42 +13,63 @@
 <body class="flex-column-around">
   <main class="container flex-column-around">
     <div class="img-container">
-      <img src="images/illustration-woman-online-mobile.svg" alt="icon">
+      <picture>
+        <source
+          media="(min-width: 1024px)"
+          srcset="/images/illustration-woman-online-desktop.svg";
+        />
+        <source
+          media="(min-width: 600px)"
+          srcset="/images/illustration-woman-online-desktop.svg"
+        />
+        <img
+          class="image"
+          src="/images/illustration-woman-online-mobile.svg"
+          alt="illustration of a woman in front of a giant monitor"
+        />
+      </picture>
     </div>
+
+    <img
+        class="box"
+        src="images/illustration-box-desktop.svg"
+        alt="Illustration of a cardboard box with a @ sign on top"
+      />
+
     <div class="faq-container flex-column-around">
       <h1 class="heading heading-color">FAQ</h1>
-      <p class="questions">
+      <p class="questions faq-item">
         How many team members can I invite?
       </p>
-      <p class="answers hidden">
+      <p class="answers faq-item">
         You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.
       </p>
       <hr>
-      <p class="questions">
+      <p class="questions faq-item">
         What is the maximum file upload size?
       </p>
-      <p class="answers hidden">
+      <p class="answers faq-item">
         No more than 2GB. All files in your account must fit your allotted storage space.
       </p>
       <hr>
-      <p class="questions">
+      <p class="questions faq-item">
         How do I reset my password?
       </p>
-      <p class="answers hidden">
+      <p class="answers faq-item">
         Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will be emailed to you.
       </p>
       <hr>
-      <p class="questions">
+      <p class="questions faq-item">
         Can I cancel my subscription?
       </p>
-      <p class="answers hidden">
+      <p class="answers faq-item">
         Yes! Send us a message and we’ll process your request no questions asked.
       </p>
       <hr>
-      <p class="questions">
+      <p class="questions faq-item">
         Do you provide additional support?
       </p>
-      <p class="answers hidden">
+      <p class="answers faq-item">
         Chat and email support is available 24/7. Phone lines are open during normal business hours.
       </p>
       <hr>

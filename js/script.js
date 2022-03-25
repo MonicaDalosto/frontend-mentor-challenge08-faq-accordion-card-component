@@ -1,5 +1,6 @@
 const questions = document.querySelectorAll('.questions');
-const answers = document.querySelectorAll('.answers');
+const faqItems = document.querySelectorAll('.faq-item');
+
 
 questions.forEach(questionClicked => {
   questionClicked.addEventListener('click', () => {
@@ -7,40 +8,22 @@ questions.forEach(questionClicked => {
   })
 });
 
-const checkHiddenClass = () => {
-  for (let i of answers) {
-    let answerItem = i;
-    if (!answerItem.className.includes('hidden')) {
-      answerItem.classList.add('hidden');
-    }
-  }
-};
-
-const checkHeadingColor = () => {
-  for (let i of questions) {
-    let questionItem = i;
-    if (questionItem.className.includes('heading-color')) {
-      questionItem.classList.remove('heading-color');
-    }
+const checkActiveClass = () => {
+  for (let i of faqItems) {
+    let faqItem = i;
+    faqItem.classList.remove('active');
   }
 };
 
 const showAnswer = (questionClicked) => {
   let question = questionClicked;
   let answer = questionClicked.nextElementSibling;
-
-  // checkHiddenClass();
-  // checkHeadingColor();
-  // answer.classList.toggle('hidden');
-  // question.classList.toggle('heading-color');
-  
-  if (answer.className.includes('hidden')) {
-    checkHiddenClass();
-    checkHeadingColor();
-    answer.classList.remove('hidden');
-    question.classList.add('heading-color');
+  if (!question.className.includes('active')) {
+    checkActiveClass();
+    answer.classList.add('active');
+    question.classList.add('active');
   } else {
-    answer.classList.add('hidden');
-    question.classList.remove('heading-color');
+    answer.classList.remove('active');
+    question.classList.remove('active');
   }
 };
