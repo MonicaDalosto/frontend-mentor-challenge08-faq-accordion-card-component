@@ -203,21 +203,11 @@ footer {
   .container {
     max-width: 90rem;
     min-height: 50rem;
-/* 
-    flex-direction: row;
-    justify-content: space-between;
-    position: relative;
-    padding: 0; */
   }
 
   .img-container {
-    /* width: 45%; */
     min-height: 50rem;
-    /* margin-top: 0; */
-    /* padding: 0; */
-    /* background: url(/images/bg-pattern-desktop.svg) no-repeat center; */
     background-size: 90rem;
-    /* overflow: hidden; */
     background-position: -50rem -25rem;
   }
 
@@ -228,8 +218,6 @@ footer {
   }
 
   .box {
-    /* display: block; */
-    /* position: absolute; */
     left: -9.3rem;
     top: 20.2rem;
     width: 19.1rem;
@@ -239,7 +227,6 @@ footer {
     width: 55%;
     max-width: 40rem;
     max-height: 38rem;
-    /* margin: auto 3rem auto auto; */
     padding-right: 6rem;
   }
 }
